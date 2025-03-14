@@ -1,0 +1,11 @@
+{% extends 'layout.html'%}
+{% from "bootstrap5/form.html" import render_form %}
+{{ bootstrap.load_css() }}
+{% block body%}
+<div class="message">
+    <div class="form">
+        {{ ckeditor.load()}} {{render_form(form)}}
+    </div>
+
+</div>
+{% endblock %}

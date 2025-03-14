@@ -1,0 +1,104 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+
+<div id="section1">
+    <div class="about">
+        <h1 id="title">👨‍💻 A future programmer, creator of his own projects.</h1>
+        <div id="about-text">
+        <p><h2>I am a programming enthusiast,developing my skills in :</h2></p>
+        <p><h3>[e.g. Django, Flask, HTML, CSS, JavaScript, Python, SQLlite]”.</h3></p>
+    <p><h4>find me on <a href="https://www.linkedin.com/in/jakub-turkiewicz-b154092b2/" class="links">Linked In</a> <a href="https://github.com/TurekDudi/Portfolio" class="links">GitHub</a></h4></p>
+    <p><h5>In free time i like to read books, play guitar or watch documentary moovies</h5></p>
+    <p><h5>interested in science, philosophy, spirituality and psychology :)</h5> </p>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="certificates"> 
+<div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-4 border shadow-lg">
+    <div class="col-lg-4  p-0 ms-0 overflow-hidden shadow-lg">
+        <img class="img-fluid" alt="certificates.png" src="static/certificates.png" style="object-fit: cover;border-radius: 20px; object-position: left; height: 500px;" alt="" width="700">
+    </div>
+    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3 offset-lg-1">
+      <h1 class="display-4 fw-bold lh-1 text-body-emphasis">I code and learn - my certificates and learn path</h1>
+      <p class="lead">started with tutorials on youtube, after coming across cs50 courses I fell in love with the form of harvard lectures and ending with 100 days of code with angela yu.</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+        <button  type="button" class="btn btn-outline-secondary btn-lg px-4">See my all certificates</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="container" id="projects">
+  <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+      <h1 class="display-4 fw-bold lh-1 text-body-emphasis">My Projects</h1>
+      <p class="lead">QI have completed a variety of projects using languages like Python, HTML, CSS, JavaScript, and have built web applications, games, and other innovative solutions. Check out my projects below.</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">All projects</button>
+      </div>
+    </div>
+    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+        <img class="rounded-lg-3" src="static/coding.jpg" alt="" width="450">
+    </div>
+  </div>
+</div>
+
+<hr style="border-top: 3 px solid black;height: 10px;background-color: black;">
+
+<div class="container px-4 py-5" id="icon-grid">
+    <h2 class="pb-2 border-bottom">Skills</h2>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+      <div class="col d-flex align-items-start">
+        <img src="static/python-logo-only.svg" style="width: 50px;">        
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Python</h3>
+          <p>I use Python for web development with Flask and Django, building dynamic web apps and working with databases (SQLite) and APIs. 
+            It’s a core part of my skill set for both back-end logic and automation..</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
+
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><img src="static/SQLite.svg" style="width: 80px;"></h3>
+          <p> lightweight, serverless database management in web applications. It's perfect for prototyping, small-scale projects, and integrating with frameworks like Django for efficient data storage and retrieval..</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">        <img src="https://static.djangoproject.com/img/logos/django-logo-positive.svg" style="width: 80px;"> 
+          </h3>
+          <p> for building robust web applications, managing databases, and handling user authentication. It's essential for creating scalable, 
+            secure projects with built-in admin interfaces and ORM..</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" style="width: 80px;"></h3>
+          <p>I have foundational knowledge in C, using it to understand low-level programming concepts, memory management, and building efficient algorithms.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"></use></svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><img src="static/web.png" style="width: 80px;"></h3>
+          <p>I use HTML for structuring web pages, CSS for styling and layout, and JavaScript for adding interactivity and dynamic functionality. These are the core technologies for front-end web development.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
+        <div>
+          <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><img src="static/github.png" style="width: 80px;"></h3>
+          <p>I use Git and GitHub for version control, managing code changes, and collaborating on projects. Git helps track modifications, while GitHub offers a platform for sharing and hosting repositories.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+{% endblock %}

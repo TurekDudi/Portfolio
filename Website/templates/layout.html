@@ -15,10 +15,17 @@
             <div class ='menu'>
                 <h1 id="name">Jakub Turkiewicz</h1>
                 <hr>
-                <a href="{{url_for('index')}}" >About me</a>
+                {% if home %}
+                <a href="#about" >About me</a>
                 <a href="#certificates" class="menu_links">Courses</a>
                 <a href="#projects" class="menu_links">Projects</a>
                 <a href="{{url_for('contact')}}" >Contact</a>
+                {%else%}
+                <a href="{{url_for('index')}}" >About me</a>
+                <a href="{{url_for('certificates')}}" class="menu_links">Courses</a>
+                <a href="{{url_for('index')}}" class="menu_links">Projects</a>
+                <a href="{{url_for('contact')}}" >Contact</a>
+                {% endif %}
                 <hr>
             </div>
         </div>

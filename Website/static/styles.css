@@ -44,10 +44,8 @@ a:active{
 }
 
 .about{
-    background-color: #ffffff;
+    text-align: center;
     margin-top: 10%;
-    background-color: linear-gradient(135deg, #f5f5f5, #f8f9fa);
-    box-shadow: 2px 5px 15px 0px rgba(0, 0, 5, 0.2);
     padding: 40px;
     border-radius: 20px;
 }
@@ -108,3 +106,4 @@ a:active{
 .rounded-lg-3{
     border-radius: 20px;
 }
+

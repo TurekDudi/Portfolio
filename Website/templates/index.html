@@ -4,7 +4,7 @@
 {% block body %}
 
 <div id="section1">
-    <div class="about">
+    <div class="about" id="about">
         <h1 id="title">👨‍💻 A future programmer, creator of his own projects.</h1>
         <div id="about-text">
         <p><h2>I am a programming enthusiast,developing my skills in :</h2></p>
@@ -25,7 +25,7 @@
       <h1 class="display-4 fw-bold lh-1 text-body-emphasis">I code and learn - my certificates and learn path</h1>
       <p class="lead">started with tutorials on youtube, after coming across cs50 courses I fell in love with the form of harvard lectures and ending with 100 days of code with angela yu.</p>
       <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-        <button  type="button" class="btn btn-outline-secondary btn-lg px-4">See my all certificates</button>
+        <a href="{{url_for('certificates')}}" type="button" class="btn btn-outline-secondary btn-lg px-4">See my all certificates</a>
       </div>
     </div>
   </div>
@@ -37,7 +37,7 @@
       <h1 class="display-4 fw-bold lh-1 text-body-emphasis">My Projects</h1>
       <p class="lead">QI have completed a variety of projects using languages like Python, HTML, CSS, JavaScript, and have built web applications, games, and other innovative solutions. Check out my projects below.</p>
       <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">All projects</button>
+        <a href="{{url_for('projects')}}" type="button" class="btn btn-outline-secondary btn-lg px-4">All projects</a>
       </div>
     </div>
     <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
@@ -51,7 +51,7 @@
 <div class="container px-4 py-5" id="icon-grid">
     <h2 class="pb-2 border-bottom">Skills</h2>
 
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5" id="skills">
       <div class="col d-flex align-items-start">
         <img src="static/python-logo-only.svg" style="width: 50px;">        
         <div>

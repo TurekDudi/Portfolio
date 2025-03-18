@@ -4,6 +4,11 @@ body{
     background: linear-gradient(500deg, #ffffff, #DCEEFF);
     min-height: 100vh;
 }
+.main{
+    padding: 20px;
+    margin:auto;
+    width: 70%;
+}
 
 #name{
     text-align: left;
@@ -13,14 +18,12 @@ body{
     font-size: 50px;
 }
 
-body{
-    padding: 20px;
-    margin:auto;
-    width: 70%;
+.sign{
+    text-align: right;
 }
 
 .menu{
-    margin-top: 50px;
+    margin-top: 30px;
     width: 85%;
     text-align: right;
 }
@@ -86,13 +89,13 @@ a:active{
 
 
 .form{
-    padding:5px;
+    padding:10px;
     border-radius: 20px;
     box-shadow:5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .heading{
-    padding-top: 100px;
+    padding-top: 40px;
     display: flex;
 }
 
@@ -105,5 +108,11 @@ a:active{
 }
 .rounded-lg-3{
     border-radius: 20px;
+}
+
+.register{
+    margin: auto;
+    text-align: center;
+    width: 30%;
 }
 

@@ -1,32 +1,53 @@
-
-
+import random
+import time
 
 def main():
-    
-    field = ['0','1','2','3','4','5','6','7','8']
-
     while True:
-        players = input("1)single player \n2)Two players\n")
-        if players == '2':    
+        used = []
+        field = ['0','1','2','3','4','5','6','7','8']
+        ai = random.sample(field,8)
+        players = input("1)single player \n2)Two players\n3)Exit\n")
+        if players == '3':
+            break
+        while True: 
+            if check_win(field) != False:
+                print(f"player {check_win(field)} win")
+                break
             print_field(field)
-
+            
             first_player = int(input("choose position: "))
-
+            used.append(str(first_player))
             field[first_player] = 'X'
 
             print_field(field)
-
-            second_player = int(input("choose position: "))
-
+            if players =='2':
+                second_player = int(input("choose position: "))
+ 
+            elif players =='1':
+                time.sleep(1)
+                for letter in used:
+                    if letter in ai:
+                        ai.remove(letter)
+                second_player = int(ai.pop())
             field[second_player] = 'O'
-        elif players == '1':
-            pass
-        else: 
-            print('choose 1 or 2')
+            
 
 
-def check_win(player):
-    pass
+
+def check_win(field):
+    posibilities = [
+        (0,1,2),(3,4,5),(6,7,8),
+        (0,3,6),(1,4,7),(2,5,8),
+        (0,4,8),(2,4,6)
+    ]
+
+    for a,b,c in posibilities:
+        if field[a] == field[b] == field[c] == 'X':
+            return 'X'
+        elif field[a] == field[b] == field[c] == 'O':
+            return 'O'
+    return False
+    
 
 
 def print_field(field):

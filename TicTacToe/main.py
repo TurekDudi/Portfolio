@@ -14,11 +14,14 @@ def main():
                 print(f"player {check_win(field)} win")
                 break
             print_field(field)
-            
-            first_player = int(input("choose position: "))
-            used.append(str(first_player))
-            field[first_player] = 'X'
-
+            while True:
+                try:
+                    first_player = int(input("choose position: "))
+                    used.append(str(first_player))
+                    field[first_player] = 'X'
+                    break
+                except:
+                    pass
             print_field(field)
             if players =='2':
                 second_player = int(input("choose position: "))
